@@ -1,0 +1,10 @@
+<project xmlns="http://expath.org/ns/project"
+         name="http://fgeorges.org/lib/xslt/serial"
+         abbrev="serial"
+         version="0.4.0pre2">
+
+   <title>XML serializer in XSLT</title>
+
+   <dependency package="http://fxsl.sf.net/"/>
+
+</project>

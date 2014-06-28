@@ -1,0 +1,66 @@
+.xml-serial-open-tag {
+  color: #257A25;
+}
+.xml-serial-close-tag {
+  color: #257A25;
+}
+.xml-serial-text {
+}
+/* TODO: ... */
+.xml-serial-attribute-colon {
+  color: #257A25;
+}
+.xml-serial-attribute-local-name {
+  color: #257A25;
+}
+.xml-serial-attribute-prefix {
+  color: #257A25;
+}
+.xml-serial-attribute-value {
+  color: #3A3A7B;
+}
+.xml-serial-attribute-value-delimiter {
+  color: #9292C9;
+}
+.xml-serial-comment-content {
+  font-style: italic;
+}
+.xml-serial-comment-delimiter {
+  color: #9292C9;
+}
+.xml-serial-element-colon {
+  color: #257A25;
+}
+.xml-serial-element-local-name {
+  color: #257A25;
+}
+.xml-serial-element-prefix {
+  color: #257A25;
+}
+.xml-serial-xmlns-colon {
+  color: #257A25;
+}
+.xml-serial-xmlns-prefix {
+  color: #257A25;
+}
+.xml-serial-xmlns-value {
+  color: #3A3A7B;
+}
+.xml-serial-xmlns-value-delimiter {
+  color: #9292C9;
+}
+.xml-serial-xmlns-xmlns {
+  color: #257A25;
+}
+.xml-serial-pi-delimiter {
+  color: #9292C9;
+}
+.xml-serial-pi-target {
+  color: #257A25;
+}
+.xml-serial-tag-delimiter {
+  color: #9292C9;
+}
+.xml-serial-tag-slash {
+  color: #257A25;
+}

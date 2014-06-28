@@ -1,0 +1,14 @@
+<root>
+  <elem id="yo&quot;yo">yo</elem>
+  <empty/>
+  <chars>&amp;&lt;&gt;&quot;</chars>
+  <my:elem xmlns:my="ns1">
+    <my:elem xmlns:my="ns1">
+      <my:other xmlns:my="ns2"/>
+    </my:elem>
+  </my:elem>
+  <wo-ws><first/><second/></wo-ws>
+  <preserve xml:space="preserve">
+      <yo/>
+  </preserve>
+</root>
