@@ -1,7 +1,7 @@
 <project xmlns="http://expath.org/ns/project"
          name="http://fgeorges.org/lib/xslt/serial"
          abbrev="serial"
-         version="0.4.0">
+         version="0.4.1">
 
    <title>XML serializer in XSLT</title>
 

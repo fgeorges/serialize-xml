@@ -328,14 +328,21 @@
     </xsl:for-each>
   </xsl:function>
 
+  <xsl:variable name="prefixes-to-ignore" as="xs:string+" select="'xml'"/>
+
   <xsl:function name="ser:make-xmlns" as="element()*">
     <xsl:param name="elem" as="element()"/>
     <xsl:for-each select="in-scope-prefixes($elem)">
-      <xsl:variable name="uri" select="namespace-uri-for-prefix(., $elem)"/>
-      <xsl:if test=". ne 'xml'
-                      and ( empty($elem/parent::*)
-                              or not(. = in-scope-prefixes($elem/parent::*))
-                              or $uri ne namespace-uri-for-prefix(., $elem/parent::*) )">
+      <xsl:variable name="uri"    select="namespace-uri-for-prefix(., $elem)"/>
+      <xsl:variable name="ignore" select="
+        if ( . = $prefixes-to-ignore ) then
+          true()
+        else if ( empty($elem/parent::*) ) then
+          false()
+        else
+          ( . = in-scope-prefixes($elem/parent::*) )
+          and ( $uri eq namespace-uri-for-prefix(., $elem/parent::*) )"/>
+      <xsl:if test="not($ignore)">
         <xmlns name="{ . }" uri="{ ser:escape-attribute($uri) }"/>
       </xsl:if>
     </xsl:for-each>
